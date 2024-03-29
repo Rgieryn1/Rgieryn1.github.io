@@ -13,7 +13,14 @@
             countobj = document.getElementById("count");
             console.log("Updating object: " + countobj);
             countobj.innerHTML = "<b>" + i + "</b>";
+
+        if (i === 0) { // Check if i equals 0
+                countobj.innerHTML = "<b><font size='+5'>BOOM!</font></b>";
+            }
         }
+    </script>
+    <script>
+        setInterval(updateCount, 100);
     </script>
 </body>
 </html>
