@@ -5,8 +5,7 @@
             transition: background-color 0.5s ease; /* Add transition effect to smoothly change background color */
         }
         </style>
-    <!-- Include confetti-js library -->
-    <script src="https://cdn.jsdelivr.net/npm/confetti-js"></script> </style>
+        <script src="https://cdn.jsdelivr.net/npm/confetti-js"></script> </style>
 
 </head>
  <body>
@@ -24,23 +23,20 @@
             console.log("Updating object: " + countobj);
             countobj.innerHTML = "<b>" + i + "</b>";
 
-        if (i === 0) { // Check if i equals 0
+        if (i === 0) {
                 countobj.innerHTML = "<b><font size='+5'>BOOM!</font></b>";
-            // Trigger explosion of confetti
-            explodeConfetti();
+                explodeConfetti();
 
             }
                       
-            // Calculate background color based on count (value of i)
-            var redness = (20 - i) * 12.75; // Increase redness gradually as count approaches 0 (255/20)
+           var redness = (20 - i) * 12.75; 
             document.body.style.backgroundColor = "rgb(" + redness + ", 0, 0)"; 
 
-             // Function to explode confetti
             function explodeConfetti() {
             confetti({
-                particleCount: 100, // Number of confetti particles
-                spread: 70, // Spread of confetti particles
-                origin: { y: 0.6 } // Origin of confetti explosion (from top)
+                particleCount: 100,
+                spread: 70,
+                origin: { y: 0.6 }
             });
         }
         }
