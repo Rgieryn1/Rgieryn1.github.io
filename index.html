@@ -35,8 +35,6 @@
             var redness = (20 - i) * 12.75; // Increase redness gradually as count approaches 0 (255/20)
             document.body.style.backgroundColor = "rgb(" + redness + ", 0, 0)"; 
 
-        }
-
              // Function to explode confetti
             function explodeConfetti() {
             confetti({
@@ -44,6 +42,7 @@
                 spread: 70, // Spread of confetti particles
                 origin: { y: 0.6 } // Origin of confetti explosion (from top)
             });
+        }
         }
     </script>
     
