@@ -4,12 +4,7 @@
         body {
             transition: background-color 0.5s ease; 
 
-             confetti({
-                particleCount: 100,
-                spread: 70,
-                origin: { y: 0.6 }
-                colors: ['#FFFFFF']   
-        }
+             }
         </style>
        
 </head>
@@ -18,9 +13,7 @@
 
     <h2>Count Down: <span id="count">20</span></h2>
     <button onclick="updateCount()">Next</button>
-
-    <script src="https://cdn.jsdelivr.net/npm/confetti-js"></script>
-    
+  
      <script>
         var i = 20;
 
@@ -32,8 +25,7 @@
 
         if (i === 0) {
                 countobj.innerHTML = "<b><font size='+5'>BOOM!</font></b>";
-                explodeConfetti();
-
+               
             }
                       
            var redness = (20 - i) * 12.75; 
